@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": 75,
+    "description": "MyTexturePack - createtextures.com",
+    "min_format": [
+      75,
+      0
+    ],
+    "max_format": [
+      75,
+      0
+    ]
+  }
+}
