@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "cases": [
+      {
+        "when": "athena",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "weapons:item/athena"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "weapons:item/athena"
+          },
+          "property": "minecraft:using_item"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "on_false": {
+        "type": "minecraft:special",
+        "base": "minecraft:item/shield",
+        "model": {
+          "type": "minecraft:shield"
+        }
+      },
+      "on_true": {
+        "type": "minecraft:special",
+        "base": "minecraft:item/shield_blocking",
+        "model": {
+          "type": "minecraft:shield"
+        }
+      },
+      "property": "minecraft:using_item"
+    }
+  }
+}

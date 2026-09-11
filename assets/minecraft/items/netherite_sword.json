@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "cases": [
+      {
+        "when": "ares",
+        "model": {
+          "type": "model",
+          "model": "weapons:item/ares"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/netherite_sword"
+    }
+  }
+}
